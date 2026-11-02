@@ -1,0 +1,14 @@
+# Configuration du projet.
+# Le pipeline n'utilise que la bibliothèque standard de Python ;
+# pytest ne sert qu'aux tests (voir requirements-dev.txt).
+
+[project]
+name = "pipeline-fhir"
+version = "1.0.0"
+description = "Pipeline FHIR sur données synthétiques : génération, conversion, SQL, rapport"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+# Le code du projet est dans src/ : on l'ajoute au chemin de recherche de Python
+pythonpath = ["src"]
+testpaths = ["tests"]
