@@ -1,0 +1,20 @@
+# Fichiers Python générés automatiquement
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environnement virtuel
+.venv/
+
+# Résultats du pipeline : ils se régénèrent avec scripts/lancer_pipeline.py
+sortie/
+
+# Secrets : jamais dans le dépôt
+.env
+.env.*
+!.env.example
+
+# Fichiers de l'éditeur et du système
+.DS_Store
+.vscode/
+.idea/
